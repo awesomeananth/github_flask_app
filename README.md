@@ -16,5 +16,7 @@ Please follow the instructions below to run both client and server in this proje
     $ pytest -v test.py
 
 
-[Optional]User Interactive Client (Additional Code, Built to show user interactions with the server)
+[Optional]
+User Interactive Client (Additional Code, Built to show user interactions with the server)
+
 4. To run this client, navigate to the client_interactive folder and follow the instructions in the file client_interactive_github_star_instructions.txt
