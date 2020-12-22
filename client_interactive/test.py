@@ -12,8 +12,6 @@ class FlaskTestClient(unittest.TestCase):
     def test_input_repo_type(self, input1, input2):
         self.assertEqual(client.get_user_input(), 200)
 
-    #TODO: any other test cases
-
 
 if __name__ == "__main__":
     unittest.main()

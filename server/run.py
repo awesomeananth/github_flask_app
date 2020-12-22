@@ -24,7 +24,6 @@ def req_response_arch(repo_list):
              res = ins.get_repo(repo)
              stgazer_count = res.stargazers_count
         except Exception as e:
-            #TODO: Additional exceptions for 200,404,500
            app.logger.error(e)
            #app.logger.info(e.status_code)
            stgazer_count = 'Repository not Found'
