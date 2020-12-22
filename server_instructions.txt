@@ -1,0 +1,16 @@
+Instructions to generate a docker image and run the Server
+
+1. Set up Docker on your machine and start it
+
+2. Navigate to github_flask_app folder and locate docker-compose.yml file
+
+3. Start the container using following command which creates network "github_flask_app_default" with the default driver, installs required packages, runs tests and builds api-service
+$ docker-compose up
+
+4. Check process status of Docker, confirm IMAGE: github_flask_app_api-service is up and running
+$ docker ps -a
+
+If successful, your server is ready, or else rebuild the image using either of the following commands and check the status of processes running
+$ docker-compose build
+or
+$ docker-compose up --build

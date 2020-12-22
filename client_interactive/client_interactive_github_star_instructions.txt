@@ -1,0 +1,48 @@
+Instructions to run the Interactive Client
+
+
+Prerequisites:
+  Install all the requirements if not installed previously
+    $ pip3 install -r requirements.txt
+  Activate pyenv  using the following command
+    $ source pyenv/bin/activate
+  Once activated, you will see the following line in your terminal
+    (pyenv)$
+
+
+1. From the terminal in client_interactive folder, run the following command to get the star count of a repository
+    python3 client_interactive.py
+
+2. To see the successful count of stargazers_count enter the input as follows
+  2.1 Enter the number of repositories for which you want to see stargazer count: (Give an integer value)
+  2.2 Enter repo names in the form of a list (strings in the form of “organization/repository")
+
+Output should appear as below
+Example 1:
+    $ python3 client_interactive.py
+    Please enter the number of repositories for which you want to see stargazer count: 1
+    Please Enter 1st repository in format organization/repository: apple/ml-hypersim
+         Repository Name  Stargazer Count
+    0  apple/ml-hypersim              598
+
+Example 2:
+    $ python3 client_interactive.py
+    Please enter the number of repositories for which you want to see stargazer count: 2
+    Please Enter 1st repository in format organization/repository: NationalSecurityAgency/ghidra
+    Please Enter 2nd repository in format organization/repository: microsoft/playwright
+                     Repository Name  Stargazer Count
+    0  NationalSecurityAgency/ghidra            23926
+    1           microsoft/playwright            19568
+
+Example 3:
+    $ python3 client_interactive.py
+    Please enter the number of repositories for which you want to see stargazer count: 1
+    Please Enter 1st repository in format organization/repository: ""
+    You need to Enter details in organization/repository format, Lets try once again
+    Please Enter 1st repository in format organization/repository:
+    You need to Enter details in organization/repository format, Lets try once again
+    Please Enter 1st repository in format organization/repository: abcdef
+    You need to Enter details in organization/repository format, Lets try once again
+    Please Enter 1st repository in format organization/repository: abc/def
+      Repository Name       Stargazer Count
+    0         abc/def  Repository not Found

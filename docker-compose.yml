@@ -1,0 +1,10 @@
+version: '3'
+services:
+    api-service:
+      container_name: github-server-app
+      build: ./server/
+      volumes: 
+        - ./server/:/usr/src/app/
+      ports:
+        - "5000:5000"
+
